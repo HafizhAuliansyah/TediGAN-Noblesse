@@ -3,7 +3,7 @@
 [![Paper](http://img.shields.io/badge/paper-arxiv.2010.04513-blue.svg)](https://arxiv.org/abs/2012.03308)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/made%20with-python-blue.svg?style=flat)](https://www.python.org/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/weihaox/TediGAN/blob/main/playground.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yNEn1M38_DEyqSAPu49GRJoPCyJ4C-Ze?usp=sharing)
 
 ## [Preprint](https://arxiv.org/abs/2012.03308) | [Extended Version](http://arxiv.org/abs/2104.08910) | [Dataset](https://github.com/weihaox/Multi-Modal-CelebA-HQ) | [Video](https://youtu.be/L8Na2f5viAM) | [Colab](http://colab.research.google.com/github/weihaox/TediGAN/blob/main/playground.ipynb) | [Replicate](https://replicate.ai/iigroup/tedigan)
 
