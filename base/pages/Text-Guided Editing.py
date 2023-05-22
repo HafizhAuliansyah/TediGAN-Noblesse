@@ -61,7 +61,7 @@ def main():
 
   # Invert images.
   # uploaded_file = uploaded_file.read()
-  if uploaded_file is not None and mode=='man':
+  if uploaded_file is not None:
     image = Image.open(uploaded_file)
     # st.image(image, caption='Uploaded Image.', use_column_width=True)
     # st.write("")
