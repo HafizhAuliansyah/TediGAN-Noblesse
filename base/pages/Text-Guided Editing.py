@@ -12,7 +12,7 @@ st.title("Text-Guided Editing of Images")
 uploaded_file = st.file_uploader("Choose Image (If 'Man' Mode)", type="jpg")
 mode_select = st.selectbox('Mode', ('Generation', 'Manipulation'))
 mode = "gen"
-if mode_select == 'Generate Image':
+if mode_select == 'Generation':
   mode = "gen"
 else:
   mode = "man"
