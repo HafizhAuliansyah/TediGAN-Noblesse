@@ -63,14 +63,15 @@ def main():
   # uploaded_file = uploaded_file.read()
   if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    # st.image(image, caption='Uploaded Image.', use_column_width=True)
-    # st.write("")
+    if mode == "man":
+      st.image(image, caption='Uploaded Image.', use_column_width=True)
+      st.write("")
     st.write("Just a second...")
 
     image = resize_image(np.array(image), (image_size, image_size))
     _, viz_results = inverter.easy_invert(image, 5)
     if mode=='man':
-      final_result = np.hstack([image, viz_results[-1]])
+      final_result = np.hstack([viz_results[1], viz_results[-1]])
     else:
       final_result = np.hstack([viz_results[1], viz_results[-1]])
 
