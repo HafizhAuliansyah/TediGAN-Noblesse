@@ -112,6 +112,8 @@ class StyleGANInverter(object):
     assert self.loss_pix_weight > 0
 
   def preprocess(self, image):
+    if image is None:
+      return image
     """Preprocesses a single image.
 
     This function assumes the input numpy array is with shape [height, width,

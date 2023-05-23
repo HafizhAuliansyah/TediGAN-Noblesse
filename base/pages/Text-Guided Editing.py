@@ -61,7 +61,7 @@ def main():
 
   # Invert images.
   # uploaded_file = uploaded_file.read()
-  if uploaded_file is not None:
+  if uploaded_file is not None and mode=='man':
     image = Image.open(uploaded_file)
     if mode == "man":
       st.image(image, caption='Uploaded Image.', use_column_width=True)
@@ -70,13 +70,14 @@ def main():
 
     image = resize_image(np.array(image), (image_size, image_size))
     _, viz_results = inverter.easy_invert(image, 5)
-    if mode=='man':
-      final_result = np.hstack([viz_results[1], viz_results[-1]])
-    else:
-      final_result = np.hstack([viz_results[1], viz_results[-1]])
+    final_result = np.hstack([viz_results[1], viz_results[-1]])
+  elif mode=='gen':
+    _, viz_results = inverter.easy_invert(None, 5)
+    final_result = np.hstack([viz_results[1], viz_results[-1]])
 
 
-    # return final_result
+  # return final_result
+  if final_result is not None:
     with st.container():
         st.image(final_result, use_column_width=True)
 
